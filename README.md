@@ -1,6 +1,6 @@
 # Front End Technical Task
 
-Please find included assets for each respective technical task. We reccomend forking this repo. 
+Please find included assets for each respective technical task. We reccomend forking this repo or sending us a link to a codepen (http://codepen.io/).
 
 We don't expect everything to be a perfect match. It's open book, feel free to hit Google but be prepared to explain your solution. 
 
