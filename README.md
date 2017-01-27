@@ -1,4 +1,4 @@
-# Front End Technical Task
+# Front End Technical Tasks
 
 Please find included assets for each respective technical task. We reccomend forking this repo or sending us a link to a codepen (http://codepen.io/).
 
