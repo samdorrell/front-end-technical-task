@@ -9,25 +9,33 @@
         box-sizing: border-box;
       }
 
-      .page-wrap {
+      h1 {
+        font-size: 3.5em;
+      }
+
+      .wrapper {
         width: 800px;
         margin: 20px auto;
       }
 
-      .main-story {
-        position: relative;
+      .listing {
+        overflow: hidden;
         margin: 0 0 25px 0;
       }
 
-      img {
+      .story {
+        float: left;
+        width: 250px;
+        margin-right: 25px;
+        position: relative;
+        font-size: 80%;
+      }
+
+      .story img {
         display: block;
       }
 
-      a {
-        color: lightblue;
-      }
-
-      .story-intro {
+      .story__intro {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -37,74 +45,64 @@
         color: white;
       }
 
-      h1 {
-         font-size: 4em;
-      }
-      h1, h2 {
+      .story__intro h2 {
         margin: 0 0 10px 0;
       }
 
-      .story-intro h1 {
-        font-size: 2.5em;
-      }
-      .story-intro p {
+      .story__intro p {
         margin: 0;
       }
 
-      .sub-stories {
-        overflow: hidden;
-        margin: 0 0 25px 0;
-      }
-
-      .sub-story {
-        float: left;
-        width: 250px;
-        margin-right: 25px;
+      .story--main {
         position: relative;
-        font-size: 80%;
+        margin: 0 0 25px 0;
+        width: 100%;
+      }
+      .story--main .story__intro h2 {
+        font-size: 2.5em;
       }
 
-      .last {
+      .story--last {
         margin-right: 0;
       }
     </style>
   </head>
 
   <body>
-    <div class="page-wrap">
+    <div class="wrapper">
       <h1>Make This Responsive</h1>
 
       <p>While maintaining the heirarchy of importance.</p>
 
-      <article class="main-story">
-        <img src="http://placehold.it/800x389" alt="Placeholder Image" />
+      <section class="listing">
+        <article class="story story--main">
+          <img src="http://placehold.it/800x389" alt="Placeholder Image" />
 
-        <div class="story-intro">
-          <h1>Most Important Story</h1>
-          <p>This article has the most visual weight.</p>
-        </div>
-      </article>
+          <div class="story__intro">
+            <h2>Most Important Story</h2>
+            <p>This article has the most visual weight.</p>
+          </div>
+        </article>
 
-      <section class="sub-stories">
-        <article class="sub-story">
+        <article class="story">
           <img src="http://placehold.it/250x350" alt="Placeholder Image" />
-          <div class="story-intro">
+          <div class="story__intro">
             <h2>Less Important Story</h2>
             <p>This story has less visual weight.</p>
           </div>
         </article>
 
-        <article class="sub-story">
+        <article class="story">
           <img src="http://placehold.it/250x350" alt="Placeholder Image" />
-          <div class="story-intro">
+          <div class="story__intro">
             <h2>Less Important Story</h2>
             <p>This story has less visual weight.</p>
           </div>
         </article>
 
-        <article class="sub-story last">
+        <article class="story story--last">
           <img src="http://placehold.it/250x350" alt="Placeholder Image" />
-          <div class="story-intro">
+          <div class="story__intro">
             <h2>Less Important Story</h2>
             <p>This story has less visual weight.</p>
           </div>
