@@ -23,5 +23,7 @@ Feel free to use whatever technologies you like.
 Don't worry too much about styling.
 
 >GET https://jsonplaceholder.typicode.com/posts
+
 >GET https://jsonplaceholder.typicode.com/posts/{POSTID}
+
 >GET https://jsonplaceholder.typicode.com/posts/{POSTID}/comments
