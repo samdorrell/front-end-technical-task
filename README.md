@@ -1,4 +1,7 @@
-# Front End Technical Tasks
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/1674051?s=400&u=abac644db14427c9edf1f067c1ac2217bb60ddcb&v=4" alt="Logo" width="150" height="150" />
+</p>
+<h1 align="center">Frontend Technical Task</h1>
 
 Please find assets for each technical task included within this repository. We recommend forking this repo or sending us a link to a codepen (http://codepen.io/).
 
