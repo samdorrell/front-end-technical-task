@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <meta charset="utf-8">
     <title>Make This Responsive</title>
 
@@ -33,6 +35,8 @@
 
       .story img {
         display: block;
+        width: 100%;
+        max-height: 100vw;
       }
 
       .story__intro {
@@ -65,6 +69,27 @@
       .story--last {
         margin-right: 0;
       }
+      
+      @media only screen and (max-width:840px){
+        .wrapper {
+          width: 95%;
+        }
+        .story{
+          width:100%;
+        }
+        .story:not(.story--main) {
+          margin-bottom:25px;
+        }
+        .story img{    
+          height:50vw;      
+          overflow:hidden;
+          object-fit: cover;
+          object-position: center;
+        }
+        .story__intro{
+          position:relative;
+        }
+      }
     </style>
   </head>
 
@@ -76,8 +101,9 @@
 
       <section class="listing">
         <article class="story story--main">
-          <img src="http://placehold.it/800x389" alt="Placeholder Image" />
-
+          <div class="img_holder">
+            <img src="http://placehold.it/800x389" alt="Placeholder Image" />
+          </div>
           <div class="story__intro">
             <h2>Most Important Story</h2>
             <p>This article has the most visual weight.</p>
@@ -85,7 +111,9 @@
         </article>
 
         <article class="story">
-          <img src="http://placehold.it/250x350" alt="Placeholder Image" />
+          <div class="img_holder">
+            <img src="http://placehold.it/250x350" alt="Placeholder Image" />
+          </div>
           <div class="story__intro">
             <h2>Less Important Story</h2>
             <p>This story has less visual weight.</p>
